@@ -16,8 +16,8 @@
   </head>
   <body>
     <section class="form-container">
-      <aside class="form-container-aside">
-        <div class="form-container-aside-primary">
+      <aside>
+        <div>
           <div class="aside-primary">
             <div class="btn">
               <p>1</p>
@@ -60,11 +60,11 @@
       <section>
         <form autocomplete="off">
           <main class="step">
-            <div class="primary-main">
+            <div class="heading">
               <h1>Personal info</h1>
               <p>Please provide your name, email address, and phone number.</p>
             </div>
-            <div class="first-secondary-main">
+            <div class="personal_info">
               <div>
                 <div class="required">
                   <label for="fname">Name</label>
@@ -114,11 +114,11 @@
           </main>
 
           <main class="step">
-            <div class="primary-main">
+            <div class="heading">
               <h1>Select your plan</h1>
               <p>You have the option of monthly or yearly billing.</p>
             </div>
-            <div class="second-secondary-main">
+            <div class="plan_container">
               <div
                 onclick="fetchValue(this)"
                 class="main-box main-box-selected"
@@ -197,7 +197,7 @@
                 <p class="free">2 months free</p>
               </div>
             </div>
-            <div class="second-tertiary-main">
+            <div class="toggle_container">
               <h1 id="monthly" style="color: hsl(213, 96%, 18%)">Monthly</h1>
               <label class="toggle">
                 <input type="checkbox" onchange="toggle(this)" />
@@ -208,14 +208,14 @@
           </main>
 
           <main class="step">
-            <div class="primary-main">
+            <div class="heading">
               <h1>Pick add-ons</h1>
               <p>Add-ons help enhance your gaming experience.</p>
             </div>
-            <div class="third-secondary-main">
+            <div class="addons_container">
               
               <div class="horizontal-box horizontal-box-selected" onclick="addAddon(this)">
-                <div class="addons-container">
+                <div class="addon">
                   <div class="addons-check checklist">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@
               </div>
 
               <div class="horizontal-box" onclick="addAddon(this)">
-                <div class="addons-container">
+                <div class="addon">
                 <div class="addons-check" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@
               </div>
 
               <div class="horizontal-box" onclick="addAddon(this)">
-              <div class="addons-container">
+              <div class="addon">
                 <div class="addons-check">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +300,7 @@
           </main>
 
           <main class="step">
-            <div class="primary-main">
+            <div class="heading">
               <h1>Finishing up</h1>
               <p>Double-check everything looks OK before confirming.</p>
             </div>
@@ -313,7 +313,7 @@
           </main>
 
           <main class="step thank-you">
-            <div class="fifth-primary-main">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -341,7 +341,7 @@
             </div>
           </main>
 
-          <div class="tertiary-main">
+          <div>
             <button onclick="handleClick(1)" id="next" class="btn-next">
               Next Step
             </button>
@@ -349,15 +349,12 @@
               Go Back
             </button>
           </div>
+        
         </form>
       </section>
     </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/Aalia98">Aalia Amin</a>.
+    <div class="attribution">Coded by <a href="https://github.com/Aalia98">Aalia Amin</a>.
     </div>
 
 
