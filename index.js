@@ -52,6 +52,8 @@ function display(index) {
       buttons[index].style.border = "none";
       buttons[index].style.color = "hsl(213, 96%, 18%)";
     }
+
+    if(index==steps.length-1) document.querySelector('.buttons_container').style.display = 'none'
   }
 
   if (index == 0 || index == steps.length - 1)
