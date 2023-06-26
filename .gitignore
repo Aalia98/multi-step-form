@@ -15,7 +15,6 @@
 .DS_Store
 .prettierignore
 
-assets
 design
 README.md
 style-guide.md
